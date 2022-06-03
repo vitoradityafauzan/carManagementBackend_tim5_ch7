@@ -1,9 +1,9 @@
 {
   "name": "car-web-application",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "start": "bin/www",
+    "start": "node bin/www",
     "develop": "nodemon -q bin/www",
     "db:create": "./node_modules/.bin/sequelize-cli db:create",
     "db:drop": "./node_modules/.bin/sequelize-cli db:drop",
