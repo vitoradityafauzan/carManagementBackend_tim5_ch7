@@ -3,6 +3,12 @@ const controllers = require('../app/controllers')
 
 const apiRouter = express.Router()
 
+// Home
+apiRouter.get('/', (req, res) => {
+  console.log("Youre in Backend")
+  res.status(201).send('<script>alert("INI BACKEND")</script>');
+})
+
 // Cars
 apiRouter.get(
   process.env.GETCARS,
