@@ -46,7 +46,7 @@ function checkEmailExist(emailBody, emailTable) {
 // function create token
 function createToken(payload) {
   return jwt.sign(payload, process.env.JWT_SIGNATURE_KEY || "secret", {
-    expiresIn: 10 * 60,
+    expiresIn: 10 * 120,
   });
 }
 
